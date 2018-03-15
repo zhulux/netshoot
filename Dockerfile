@@ -24,6 +24,7 @@ RUN set -ex \
     conntrack-tools \
     socat
 # apparmor issue #14140
+# Add this line for test ci
 RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
 
 ADD netgen.sh /usr/local/bin/netgen
